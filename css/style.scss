@@ -1,0 +1,168 @@
+@import "nullstyle.scss";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
+
+.ibg {
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+}
+
+.ibg img {
+   width: 0;
+   height: 0;
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0;
+   visibility: hidden;
+}
+// оболчка =========================
+.wrapper {
+   width: 100%;
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+// оболчка =========================
+
+// Переменные ================================
+$mw: 1100px;
+$minwidth: 320px;
+$md1: $mw + 12;
+$md2: 992.98;
+$md3: 767.98;
+$md4: 479.98;
+// Переменные ================================
+
+// основная сетка ===========================
+.container {
+   max-width: $mw;
+   margin: 0 auto;
+   width: 100%;
+}
+// основная сетка ===========================
+
+.mainblock {
+   flex: 1 1 auto;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   // align-items: center;
+   text-align: center;
+   padding: 50px 0;
+   &__content {
+      position: relative;
+      z-index: 1;
+      .container {
+         height: 100%;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+         align-items: center;
+      }
+   }
+
+   &__logo {
+   }
+
+   &__text {
+      color: #fff;
+      position: relative;
+      padding: 0px 0px 45px 0px;
+      margin: 30px 0px;
+      &:after {
+         content: "";
+         width: 105px;
+         height: 2px;
+         background-color: #fff;
+         position: absolute;
+         left: 50%;
+         margin: 0px 0px 0px -52.5px;
+         bottom: 0;
+      }
+   }
+   &__title {
+      font-weight: 900;
+      font-size: 34px;
+      line-height: 40px;
+      text-transform: uppercase;
+      letter-spacing: 5.43px;
+      margin: 0px 0px 10px 0px;
+      @media (max-width: $md3+px) {
+         font-size: 25px;
+         line-height: 30px;
+      }
+   }
+
+   &__subtitle {
+      font-size: 26px;
+      font-weight: 400;
+      letter-spacing: 4.15px;
+   }
+
+   &__footer {
+      display: inline-flex;
+      flex-direction: column;
+   }
+
+   &__btn {
+      margin: 0px 0px 10% 0px;
+   }
+
+   &__arrow {
+      position: relative;
+      animation: arrow 2s infinite ease;
+   }
+
+   &__image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+   }
+}
+
+@keyframes arrow {
+   0% {
+      top: 0;
+   }
+   50% {
+      top: 20px;
+   }
+   100% {
+      top: 0;
+   }
+}
+
+.btn {
+   display: inline-block;
+   height: 44px;
+   padding: 0 42px;
+   line-height: 44px;
+   text-transform: uppercase;
+   color: #fff;
+   font-size: 16px;
+   letter-spacing: 0.67px;
+   &:hover {
+      background-color: #fff;
+      color: #000;
+      transition: 1s;
+      opacity: 0.6;
+   }
+   &.fw {
+      width: 100%;
+   }
+   &_w {
+      color: #fff;
+      border: 1px solid #fff;
+   }
+   span {
+      position: relative;
+      z-index: 1;
+   }
+}
+.ibg {
+}
