@@ -41,6 +41,7 @@ $md4: 479.98;
    max-width: $mw;
    margin: 0 auto;
    width: 100%;
+   padding: 0 5px;
 }
 // основная сетка ===========================
 
@@ -49,7 +50,7 @@ $md4: 479.98;
    position: relative;
    display: flex;
    justify-content: center;
-   // align-items: center;
+   align-items: center;
    text-align: center;
    padding: 50px 0;
    &__content {
@@ -146,25 +147,31 @@ $md4: 479.98;
    color: #fff;
    font-size: 16px;
    letter-spacing: 0.67px;
-   &:hover {
-      background-color: #fff;
-      color: #000;
-      transition: 1s;
-      opacity: 0.6;
-   }
    &.fw {
       width: 100%;
    }
    &_w {
       color: #fff;
       border: 1px solid #fff;
+      span {
+         position: relative;
+         z-index: 1;
+      }
+      &:hover {
+         background-color: #fff;
+         color: #000000;
+         transition: 1s;
+      }
    }
-   span {
-      position: relative;
-      z-index: 1;
+   &_b {
+      color: #000;
+      border: 1px solid #000;
+      &:hover {
+         background-color: #000;
+         color: #fff;
+         transition: 1s;
+      }
    }
-}
-.ibg {
 }
 
 // ==========================================
@@ -177,7 +184,17 @@ $md4: 479.98;
 
 // MENU  ==========================================
 .menu {
+   border-bottom: 1px solid #f2f2f2;
    padding: 22px 0;
+   &_mb {
+      margin: 0px 0px 130px 0px;
+      @media (max-width: $md2+px) {
+         margin: 0px 0px 50px 0px;
+      }
+      @media (max-width: $md3+px) {
+         margin: 0px 0px 30px 0px;
+      }
+   }
    @media (max-width: $md4+px) {
       padding: 22px 0px 12px 0px;
    }
@@ -217,3 +234,202 @@ $md4: 479.98;
    }
 }
 // ==========================================
+
+// ============header-block======================
+.header-block {
+   text-align: center;
+   &__title {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 8.95px;
+      text-transform: uppercase;
+      position: relative;
+      padding: 0px 0px 30px 0px;
+      &:after {
+         content: "";
+         width: 81px;
+         position: absolute;
+         left: 49.3%;
+         bottom: 0;
+         margin: 0px 0px 0px -40.5px;
+         height: 1px;
+         background-color: #000000;
+      }
+   }
+
+   &__subtitle {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 30px 0px 0px 0px;
+      color: #868585;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 25.89px;
+   }
+}
+
+// ==============================================
+
+.about {
+   padding: 0px 0px 60px 0px;
+   @media (max-width: $md2+px) {
+      padding: 0px 0px 10px 0px;
+   }
+   &__header-block {
+      margin: 0px 0px 65px 0px;
+      @media (max-width: $md2+px) {
+         margin: 0px 0px 30px 0px;
+      }
+   }
+
+   &__body {
+      text-align: center;
+   }
+
+   &__row {
+      display: inline-flex;
+      margin: 0 -15px;
+      @media (max-width: $md3+px) {
+         display: block;
+      }
+   }
+
+   &__column {
+      margin: 0px 0px 30px 0px;
+      flex: 0 1 33.3333%;
+      padding: 0 15px;
+   }
+
+   &__item {
+      text-align: center;
+      max-width: 260px;
+      @media (max-width: $md3+px) {
+         max-width: none;
+      }
+   }
+
+   &__icon {
+      border-radius: 50%;
+      border: 1px solid #f2f2f2;
+      width: 92px;
+      height: 92px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0px 0px 40px 0px;
+      &_l {
+         img {
+            position: relative;
+            left: 5px;
+         }
+      }
+      @media (max-width: $md3+px) {
+         margin: 0px 0px 15px 0px;
+      }
+   }
+
+   &__title {
+      font-size: 22px;
+      text-transform: uppercase;
+      letter-spacing: 3.52px;
+      margin: 0px 0px 33px 0px;
+      @media (max-width: $md2+px) {
+         font-size: 18px;
+         margin: 0px 0px 25px 0px;
+      }
+      @media (max-width: $md3+px) {
+         margin: 0px 0px 15px 0px;
+      }
+   }
+
+   &__text {
+      color: #868585;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 26px;
+   }
+}
+
+// ===portfolio =======================================
+.portfolio {
+   background-color: #f3f3f3;
+   padding: 105px 0px 60px 0px;
+   @media (max-width:$md2+px) {
+      padding: 50px 0px 40px 0px;
+   }
+   &__header-block {
+      margin:0px 0px 50px 0px;
+      @media (max-width:$md2+px) {
+         margin:0px 0px 30px 0px;
+      }
+      @media (max-width:$md3+px) {
+         margin:0px 0px 20px 0px;
+      }
+   }
+
+   &__filter {
+      margin:0px 0px 135px 0px;
+      @media (max-width:$md2+px) {
+         margin:0px 0px 50px 0px;
+      }
+   }
+
+   &__items {
+      display: flex;
+      margin: 0 -15px;
+      flex-wrap: wrap;
+   }
+
+   &__column {
+      flex: 0 1 50%;
+      padding: 0 15px;
+      margin:0px 0px 30px 0px;
+      @media (max-width:550px) {
+         flex: 0 1 100%;
+      } 
+   }
+
+   &__item {
+      img{
+         max-width: 100%;
+      }
+   }
+
+   &__footer {
+      padding: 35px 0px 0px 0px;
+      text-align: center;
+      @media (max-width:$md3+px) {
+         padding: 15px 0px 0px 0px;
+      } 
+      
+   }
+
+   &__btn {
+   }
+}
+.filter {
+
+   &__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+
+   &__item {
+      color:#3c3c3c;
+      font-size: 15px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin: 0 25px;
+      cursor: pointer;
+      &.active {
+         color: #ada074;
+      }
+      @media (max-width:$md3+px) {
+         margin: 0 15px;
+      } 
+   }
+}
+
+
+
