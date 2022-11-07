@@ -354,23 +354,23 @@ $md4: 479.98;
 .portfolio {
    background-color: #f3f3f3;
    padding: 105px 0px 60px 0px;
-   @media (max-width:$md2+px) {
+   @media (max-width: $md2+px) {
       padding: 50px 0px 40px 0px;
    }
    &__header-block {
-      margin:0px 0px 50px 0px;
-      @media (max-width:$md2+px) {
-         margin:0px 0px 30px 0px;
+      margin: 0px 0px 50px 0px;
+      @media (max-width: $md2+px) {
+         margin: 0px 0px 30px 0px;
       }
-      @media (max-width:$md3+px) {
-         margin:0px 0px 20px 0px;
+      @media (max-width: $md3+px) {
+         margin: 0px 0px 20px 0px;
       }
    }
 
    &__filter {
-      margin:0px 0px 135px 0px;
-      @media (max-width:$md2+px) {
-         margin:0px 0px 50px 0px;
+      margin: 0px 0px 135px 0px;
+      @media (max-width: $md2+px) {
+         margin: 0px 0px 50px 0px;
       }
    }
 
@@ -383,14 +383,14 @@ $md4: 479.98;
    &__column {
       flex: 0 1 50%;
       padding: 0 15px;
-      margin:0px 0px 30px 0px;
-      @media (max-width:550px) {
+      margin: 0px 0px 30px 0px;
+      @media (max-width: 550px) {
          flex: 0 1 100%;
-      } 
+      }
    }
 
    &__item {
-      img{
+      img {
          max-width: 100%;
       }
    }
@@ -398,17 +398,15 @@ $md4: 479.98;
    &__footer {
       padding: 35px 0px 0px 0px;
       text-align: center;
-      @media (max-width:$md3+px) {
+      @media (max-width: $md3+px) {
          padding: 15px 0px 0px 0px;
-      } 
-      
+      }
    }
 
    &__btn {
    }
 }
 .filter {
-
    &__list {
       display: flex;
       justify-content: center;
@@ -416,7 +414,7 @@ $md4: 479.98;
    }
 
    &__item {
-      color:#3c3c3c;
+      color: #3c3c3c;
       font-size: 15px;
       text-transform: uppercase;
       font-weight: 700;
@@ -425,11 +423,205 @@ $md4: 479.98;
       &.active {
          color: #ada074;
       }
-      @media (max-width:$md3+px) {
+      &:hover {
+         color: #ada074;
+         transition: 0.5s;
+      }
+      @media (max-width: $md3+px) {
          margin: 0 15px;
-      } 
+      }
    }
 }
 
+// partners ================
 
+.partners {
+   background: url(/img/bg.jpg) center / cover no-repeat;
+   padding: 100px 0px 70px 0px;
+   @media (max-width: $md3+px) {
+      padding: 30px 0px 0px 0px;
+   }
+   &__title {
+      font-size: 30px;
+      color: #fff;
+      font-weight: 300;
+      margin: 0px 0px 90px 0px;
+      text-align: center;
+      @media (max-width: $md3+px) {
+         margin: 0px 0px 30px 0px;
+      }
+   }
 
+   &__items {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-wrap: wrap;
+   }
+
+   &__column {
+      padding: 0 50px;
+      margin: 0px 0px 70px 0px;
+      @media (max-width: $md3+px) {
+         padding: 0 30px;
+      }
+   }
+
+   &__item {
+   }
+}
+
+// contacts==========================================
+input {
+   border: 1px solid #000;
+   height: 50px;
+   border-radius: 0 !important;
+   width: 100%;
+   display: block;
+   padding: 0 20px;
+   font-size: 15px;
+}
+textarea {
+   resize: none;
+   border: 1px solid #000;
+   height: 117px;
+   padding: 10px 20px;
+   width: 100%;
+}
+
+.contacts {
+   padding: 180px 0px 60px 0px;
+   @media (max-width: $md2+px) {
+      padding: 80px 0px 50px 0px;
+   }
+   @media (max-width: $md3+px) {
+      padding: 30px 0px 30px 0px;
+   }
+
+   &__header-block {
+      margin: 0px 0px 120px 0px;
+      @media (max-width: $md2+px) {
+         margin: 0px 0px 50px 0px;
+      }
+      @media (max-width: $md3+px) {
+         margin: 0px 0px 30px 0px;
+      }
+   }
+
+   &__body {
+      display: flex;
+      margin: 0 -25px;
+      @media (max-width: $md3+px) {
+         display: block;
+      }
+   }
+
+   &__column {
+      flex: 0 1 50%;
+      padding: 0 25px;
+   }
+
+   &__form {
+      text-align: right;
+      @media (max-width: $md3+px) {
+         text-align: left;
+         margin: 0px 0px 30px 0px;
+      }
+   }
+
+   &__content {
+      max-width: 260px;
+      @media (max-width: $md3+px) {
+         max-width: 100%;
+      }
+   }
+
+   &__text {
+      line-height: 26px;
+      font-size: 14px;
+      font-weight: 300;
+      margin: 0px 0px 35px 0px;
+   }
+
+   &__label {
+      font-size: 14px;
+      font-weight: 700;
+      margin: 0px 0px 25px 0px;
+   }
+
+   &__social {
+      margin: 0px 0px 15px 0px;
+   }
+
+   &__email {
+      font-size: 14px;
+      a {
+         font-weight: 700;
+         color: #000;
+         &:hover {
+            text-decoration: underline;
+         }
+      }
+   }
+}
+
+.form-contacts {
+   &__body {
+      display: inline-block;
+      width: 100%;
+      max-width: 385px;
+      @media (max-width: $md3+px) {
+         max-width: none;
+         display: block;
+      }
+   }
+
+   &__row {
+      display: flex;
+      margin: 0 -15px 70px -15px;
+      @media (max-width: $md4+px) {
+         margin: 0 -15px 30px -15px;
+      }
+      @media (max-width: $md4+px) {
+         display: block;
+      }
+   }
+
+   &__column {
+      flex: 0 1 50%;
+      padding: 0 15px;
+      @media (max-width: $md4+px) {
+         &:first-child {
+            margin: 0px 0px 30px 0px;
+         }
+      }
+   }
+
+   &__input {
+   }
+
+   &__label {
+      font-size: 14px;
+      font-weight: 700;
+      margin: 0px 0px 10px 0px;
+      text-transform: uppercase;
+      text-align: left;
+   }
+
+   &__btn {
+      margin: 35px 0px 0px 0px;
+      @media (max-width: $md4+px) {
+         display: block;
+         width: 100%;
+      }
+   }
+}
+.input {
+}
+.social {
+   display: flex;
+   &__item {
+      margin: 0px 15px 0px 0px;
+   }
+}

@@ -571,8 +571,224 @@ h6 {
 .filter__item.active {
   color: #ada074;
 }
+.filter__item:hover {
+  color: #ada074;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
 @media (max-width: 767.98px) {
   .filter__item {
     margin: 0 15px;
   }
+}
+
+.partners {
+  background: url(/img/bg.jpg) center/cover no-repeat;
+  padding: 100px 0px 70px 0px;
+}
+@media (max-width: 767.98px) {
+  .partners {
+    padding: 30px 0px 0px 0px;
+  }
+}
+.partners__title {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 300;
+  margin: 0px 0px 90px 0px;
+  text-align: center;
+}
+@media (max-width: 767.98px) {
+  .partners__title {
+    margin: 0px 0px 30px 0px;
+  }
+}
+.partners__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.partners__column {
+  padding: 0 50px;
+  margin: 0px 0px 70px 0px;
+}
+@media (max-width: 767.98px) {
+  .partners__column {
+    padding: 0 30px;
+  }
+}
+input {
+  border: 1px solid #000;
+  height: 50px;
+  border-radius: 0 !important;
+  width: 100%;
+  display: block;
+  padding: 0 20px;
+  font-size: 15px;
+}
+
+textarea {
+  resize: none;
+  border: 1px solid #000;
+  height: 117px;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.contacts {
+  padding: 180px 0px 60px 0px;
+}
+@media (max-width: 992.98px) {
+  .contacts {
+    padding: 80px 0px 50px 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .contacts {
+    padding: 30px 0px 30px 0px;
+  }
+}
+.contacts__header-block {
+  margin: 0px 0px 120px 0px;
+}
+@media (max-width: 992.98px) {
+  .contacts__header-block {
+    margin: 0px 0px 50px 0px;
+  }
+}
+@media (max-width: 767.98px) {
+  .contacts__header-block {
+    margin: 0px 0px 30px 0px;
+  }
+}
+.contacts__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -25px;
+}
+@media (max-width: 767.98px) {
+  .contacts__body {
+    display: block;
+  }
+}
+.contacts__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 0 25px;
+}
+.contacts__form {
+  text-align: right;
+}
+@media (max-width: 767.98px) {
+  .contacts__form {
+    text-align: left;
+    margin: 0px 0px 30px 0px;
+  }
+}
+.contacts__content {
+  max-width: 260px;
+}
+@media (max-width: 767.98px) {
+  .contacts__content {
+    max-width: 100%;
+  }
+}
+.contacts__text {
+  line-height: 26px;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0px 0px 35px 0px;
+}
+.contacts__label {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0px 0px 25px 0px;
+}
+.contacts__social {
+  margin: 0px 0px 15px 0px;
+}
+.contacts__email {
+  font-size: 14px;
+}
+.contacts__email a {
+  font-weight: 700;
+  color: #000;
+}
+.contacts__email a:hover {
+  text-decoration: underline;
+}
+
+.form-contacts__body {
+  display: inline-block;
+  width: 100%;
+  max-width: 385px;
+}
+@media (max-width: 767.98px) {
+  .form-contacts__body {
+    max-width: none;
+    display: block;
+  }
+}
+.form-contacts__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -15px 70px -15px;
+}
+@media (max-width: 479.98px) {
+  .form-contacts__row {
+    margin: 0 -15px 30px -15px;
+  }
+}
+@media (max-width: 479.98px) {
+  .form-contacts__row {
+    display: block;
+  }
+}
+.form-contacts__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  padding: 0 15px;
+}
+@media (max-width: 479.98px) {
+  .form-contacts__column:first-child {
+    margin: 0px 0px 30px 0px;
+  }
+}
+.form-contacts__label {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0px 0px 10px 0px;
+  text-transform: uppercase;
+  text-align: left;
+}
+.form-contacts__btn {
+  margin: 35px 0px 0px 0px;
+}
+@media (max-width: 479.98px) {
+  .form-contacts__btn {
+    display: block;
+    width: 100%;
+  }
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.social__item {
+  margin: 0px 15px 0px 0px;
 }
